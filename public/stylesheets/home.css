@@ -1,0 +1,24 @@
+.ad__banner {
+  background-color: #2e2e2e;
+  text-align: center;
+  color: white;
+}
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+  position: sticky;
+  text-align: center;
+}
+.navbar__elements {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 1em 0em 1em 32em;
+  background-color: #f5f4f4;
+}
+
+.nav__links {
+  padding-right: 5em;
+  text-decoration: none;
+  color: black;
+}
