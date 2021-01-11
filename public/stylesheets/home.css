@@ -1,20 +1,25 @@
+.header {
+  border-bottom: #00303f 0.2em solid;
+  padding-bottom: 1em;
+}
 .ad__banner {
   background-color: #2e2e2e;
   text-align: center;
   color: white;
 }
 .heading {
-  font-family: 'Times New Roman', Times, serif;
-  position: sticky;
+  font-family: 'Bodoni Moda', serif;
   text-align: center;
 }
 .navbar__elements {
-  position: sticky;
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 1em 0em 1em 32em;
+  align-items: center;
+  justify-content: center;
   background-color: #f5f4f4;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav__links {

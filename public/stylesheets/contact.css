@@ -1,0 +1,15 @@
+.contact-header {
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+}
+.contact-header__elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-header__elements * {
+  padding-left: 4em;
+  padding-right: 4em;
+}
