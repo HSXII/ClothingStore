@@ -1,1 +1,17 @@
 <%- include('../views/partials/header.ejs') %>
+<a href="/shop">All</a>
+<a href="/shop?item=Shirt">Shirt</a>
+<a href="/shop?item=Pants">Pants</a>
+<a href="/shop?item=Jacket">Jacket</a>
+<div>
+  <ul>
+    <% for(product of products) {%>
+    <li><%= product.name %></li>
+    <ul>
+      <li><%= product.item %></li>
+      <li><%= '$' %><%= product.price %></li>
+      <li><%= 'Size:' %> <%= product.size %></li>
+    </ul>
+    <% } %>
+  </ul>
+</div>
