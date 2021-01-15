@@ -1,0 +1,71 @@
+.footer__header {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  margin-top: 1em;
+}
+
+.footer__header:after,
+.footer__header:before {
+  content: '';
+  width: 15em;
+  height: 2px;
+  background: black;
+  margin: 0 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.2em;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.footer-container__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 2;
+  grid-row: 1/5;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.mail-list,
+.mail-list__form {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.mail-list__form__input {
+  width: 15em;
+  height: 2.5em;
+}
+
+.mail-list__form__button {
+  background-color: #2e2e2e;
+  color: white;
+  height: 2.5em;
+  text-decoration: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.mail-list__form__input:hover {
+  border: 0.2em solid black;
+  transition: ease-in 0.3s;
+}
+
+.mail-list__form__button:hover {
+  transition: ease-in 0.3s;
+  background-color: whitesmoke;
+  color: black;
+}

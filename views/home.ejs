@@ -1,1 +1,20 @@
 <%- include('../views/partials/header.ejs') %>
+<head>
+  <link rel="stylesheet" href="/stylesheets/carousel.css" type="text/css" />
+</head>
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <img class="carousel__photo initial" src="/assets/image_1.jpg" />
+    <img class="carousel__photo" src="/assets/image_2.jpg" />
+    <img class="carousel__photo" src="/assets/image_3.jpg" />
+    <img class="carousel__photo" src="/assets/image_1.jpg" />
+    <img class="carousel__photo" src="/assets/image_2.jpg" />
+    <img class="carousel__photo" src="/assets/image_3.jpg" />
+
+    <div class="carousel__button--next"></div>
+    <div class="carousel__button--prev"></div>
+  </div>
+</div>
+<script src="/javascript/carousel.js"></script>
+
+<%- include('../views/partials/footer.ejs') %>

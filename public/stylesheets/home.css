@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 .header {
   border-bottom: #00303f 0.2em solid;
   padding-bottom: 1em;
@@ -10,6 +14,8 @@
 .heading {
   font-family: 'Bodoni Moda', serif;
   text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.2em;
 }
 .navbar__elements {
   display: flex;
