@@ -1,3 +1,7 @@
+*:focus {
+  outline: none;
+}
+
 .contact-header {
   text-align: center;
   font-family: 'Bodoni Moda', serif;
@@ -12,4 +16,54 @@
 .contact-header__elements * {
   padding-left: 4em;
   padding-right: 4em;
+}
+
+.contact-form__header {
+  text-align: center;
+  font-family: 'Roboto';
+  margin-top: 3em;
+}
+
+.contact-form__button {
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.contact-form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form__input {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 25em;
+  height: 4em;
+}
+
+.contact-form__input--subject {
+  width: 50em;
+}
+
+.contact-form__input--message {
+  width: 50em;
+  height: 7em;
+  margin-bottom: 1em;
+}
+
+.contact-form__button--style {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.contact-form__input:hover {
+  border-bottom: 4px solid black;
+  transition: linear 0.2s;
+}
+
+.contact-form__button--style:hover {
+  color: rgb(137, 165, 95);
 }

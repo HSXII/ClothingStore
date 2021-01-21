@@ -40,9 +40,6 @@ app.get('/shop', async (req, res) => {
     const products = await Product.find({})
     res.render('shop', { products })
   }
-  const products = await Product.find({})
-  const uniqueItems = await Product.distinct(products.item)
-  console.log(uniqueItems)
 })
 app.get('/story', (req, res) => {
   res.render('story')

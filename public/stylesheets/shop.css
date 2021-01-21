@@ -2,3 +2,74 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.border {
+  border-bottom: 2px solid #d4d4d4;
+  width: 100%;
+}
+
+.filter-tab {
+  font-family: 'Bodoni Moda';
+  position: absolute;
+  margin-left: 3em;
+}
+
+.filter-tab__header {
+  color: #282828;
+  font-size: 1.75em;
+  font-family: 'Bodoni Moda';
+  margin-bottom: 0.5em;
+}
+
+.filter-tab__category {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  background: none;
+  border: none;
+  font-size: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-card__container {
+  display: inline-grid;
+  grid-template-columns: auto;
+  padding-left: 15em;
+}
+
+.product-card {
+  text-align: center;
+  margin: 1em;
+}
+
+.product-card__name,
+.product-card__price,
+.product-card__button {
+  list-style: none;
+  padding: 0.3em;
+}
+
+.product-card__image {
+  width: 10em;
+}
+
+.product-card__button {
+  background-color: #2e2e2e;
+  color: white;
+  height: 2.5em;
+  text-decoration: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.product-card__button:hover {
+  transition: ease-in 0.3s;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.product-image {
+  width: 15em;
+}

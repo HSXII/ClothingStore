@@ -28,3 +28,23 @@
     </div>
   </div>
 </div>
+<div class="contact-form__header">FOR ANY QUESTIONS, PLEASE SEND US A MESSAGE</div>
+<div class="contact-form">
+  <form action="">
+    <div>
+      <input class="contact-form__input" type="text" name="username" id="username" placeholder="Name" />
+      <input class="contact-form__input" type="text" name="email" id="email" placeholder="Email" />
+    </div>
+    <div>
+      <input class="contact-form__input contact-form__input--subject" type="text" name="subject" id="subject" placeholder="Subject" />
+    </div>
+    <div>
+      <input class="contact-form__input contact-form__input--message" type="text" name="message" id="message" placeholder="Message" />
+    </div>
+    <div class="contact-form__button">
+      <button class="contact-form__button--style mb-1">Submit</button>
+    </div>
+  </form>
+</div>
+
+<%- include('../views/partials/footer.ejs') %>

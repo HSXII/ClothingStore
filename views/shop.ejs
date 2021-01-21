@@ -1,20 +1,18 @@
 <head>
   <link rel="stylesheet" href="/stylesheets/shop.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <%- include('../views/partials/header.ejs') %>
-<a href="/shop">All</a>
-<a href="/shop?item=Shirt">Shirt</a>
-<a href="/shop?item=Pants">Pants</a>
-<a href="/shop?item=Jacket">Jacket</a>
-<div>
-  <ul>
-    <% for(product of products) {%>
-    <li><%= product.name %></li>
-    <ul>
-      <li><%= product.item %></li>
-      <li><%= '$' %><%= product.price %></li>
-      <li><%= 'Size:' %> <%= product.size %></li>
-    </ul>
-    <% } %>
-  </ul>
+<div class="filter-tab">
+  <h3 class="filter-tab__header">Filter By</h3>
+  <div class="border"></div>
+  <div><button id="filterButton" class="filter-tab__category">Category</button></div>
+  <div class="filter-list hidden"><a href="/shop">All</a></div>
+  <div class="filter-list hidden"><a href="/shop?item=Shirt">Shirt</a></div>
+  <div class="filter-list hidden"><a href="/shop?item=Pants">Pants</a></div>
+  <div class="filter-list hidden"><a href="/shop?item=Jacket">Jacket</a></div>
+  <div class="border"></div>
 </div>
+<script src="/javascript/shop.js"></script>
+
+<% for(product of products){%> <%- include('../views/partials/productcard.ejs') %> <% } %> <%- include('../views/partials/footer.ejs') %>

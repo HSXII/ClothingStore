@@ -69,3 +69,8 @@
   background-color: whitesmoke;
   color: black;
 }
+
+.social-media__icons {
+  width: 1.5em;
+  margin: 0.5em;
+}
