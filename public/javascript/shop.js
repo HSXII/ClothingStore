@@ -1,6 +1,27 @@
-const lists = document.querySelectorAll('.filter-list')
-document.getElementById('filterButton').onclick = function () {
-  for (list of lists) {
-    list.classList.toggle('active')
-  }
+let active = localStorage.getItem('active')
+const filterToggle = document.getElementById('filterButton')
+const list = document.getElementById('list')
+const openList = () => {
+  list.classList.add('active')
+
+  localStorage.setItem('active', 'enabled')
 }
+
+const closeList = () => {
+  list.classList.remove('active')
+
+  localStorage.setItem('active', null)
+}
+
+if (active === 'enabled') {
+  openList()
+}
+
+filterToggle.addEventListener('click', () => {
+  active = localStorage.getItem('active')
+  if (active !== 'enabled') {
+    openList()
+  } else {
+    closeList()
+  }
+})
